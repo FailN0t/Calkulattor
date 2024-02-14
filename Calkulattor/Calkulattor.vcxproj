@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Butt.h" />
+    <ClInclude Include="Keypad.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Image\calc.png" />
