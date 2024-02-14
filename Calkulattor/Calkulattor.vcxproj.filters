@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы ресурсов\Image">
+      <UniqueIdentifier>{8315dfd2-318b-4290-997f-224f8424f90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Font">
+      <UniqueIdentifier>{99e14159-856a-4682-ab2b-8060c12b75cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calkulattor.cpp">
@@ -21,5 +27,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Butt.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Image\calc.png">
+      <Filter>Файлы ресурсов\Image</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Font\FilsonProBlack.otf">
+      <Filter>Файлы ресурсов\Font</Filter>
+    </Font>
   </ItemGroup>
 </Project>

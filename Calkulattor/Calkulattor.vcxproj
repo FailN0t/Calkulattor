@@ -132,6 +132,15 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Butt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Image\calc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Font\FilsonProBlack.otf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\sfml_graphics.redist.2.6.0\build\native\sfml_graphics.redist.targets" Condition="Exists('..\packages\sfml_graphics.redist.2.6.0\build\native\sfml_graphics.redist.targets')" />

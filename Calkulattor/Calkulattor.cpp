@@ -2,10 +2,33 @@
 //
 
 #include <iostream>
+#include "Butt.h"
 
 int main()
 {
-    
+
+	RenderWindow win(VideoMode(600, 800), "Calk");
+	Event event;
+	Image icon;
+	Butt butt;
+
+	if (!icon.loadFromFile("Image/calc.png")) return 11;
+
+
+	win.setIcon(32, 32, icon.getPixelsPtr());
+	win.setFramerateLimit(30);
+
+	while (win.isOpen())
+	{
+		while (win.pollEvent(event)) {
+			if (event.type == Event::Closed) win.close();
+			butt.mousePresBut(win, event);
+		}
+		win.clear();
+		butt.print(win);
+		win.display();
+	}
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
